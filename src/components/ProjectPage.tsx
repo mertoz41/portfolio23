@@ -6,7 +6,6 @@ import Cezs from "./Cezs";
 import Squirrel from "./Squirrel";
 import Mfm from "./Mfm";
 import Hooper from "./Hooper";
-// import CezsIcon from "../assets";
 
 const ProjectPage = ({
   projectAnimation,

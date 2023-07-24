@@ -1,11 +1,5 @@
 import React from "react";
 import { Wrap } from "@chakra-ui/react";
-import Explore from "../assets/pics/hooper/explore.png";
-import ExploreResponsive from "../assets/pics/hooper/exploreResponsive.png";
-import Location from "../assets/pics/hooper/location.png";
-import LocationResponsive from "../assets/pics/hooper/locationResponsive.png";
-import NewCourt from "../assets/pics/hooper/newcourt.png";
-import NewCourtResponsive from "../assets/pics/hooper/newcourtResponsive.png";
 import ProjectPic from "./ProjectPic";
 const Hooper = () => {
   return (

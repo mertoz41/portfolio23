@@ -199,6 +199,9 @@ function App() {
       <Head>
         <title>Mert Ozkaynak</title>
       </Head>
+      {/* <Head>
+      <link rel="shortcut icon" href="/favicon.ico" />
+    </Head> */}
       {displayProject ? (
         <ProjectPage
           projectAnimation={projectAnimation}

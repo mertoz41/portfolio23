@@ -52,6 +52,7 @@ const ProjectPic = ({
           }
           borderRadius={15}
           onLoad={() => setPicLoaded(true)}
+          alt={`${picture}-alt`}
         />
       </Skeleton>
     </WrapItem>

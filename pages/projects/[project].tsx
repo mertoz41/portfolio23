@@ -93,14 +93,19 @@ const Project = () => {
       >
         <Flex flexDirection="row" justifyContent="space-between" w="100%">
           {router.query.project === "cezs" ? (
-            <Image src={"/icon.png"} boxSize={40} borderRadius={15} />
+            <Image
+              src={"/icon.png"}
+              boxSize={40}
+              borderRadius={15}
+              alt="cezs-icon"
+            />
           ) : (
             <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"}>
               {router.query.project &&
                 projects[`${router.query.project}`].title}
             </Text>
           )}
-          {project.liveLink ? (
+          {project && project.liveLink ? (
             <Link
               href={project.liveLink}
               alignSelf={"center"}

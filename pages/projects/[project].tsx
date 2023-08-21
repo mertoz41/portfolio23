@@ -96,7 +96,8 @@ const Project = () => {
             <Image src={"/icon.png"} boxSize={40} borderRadius={15} />
           ) : (
             <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"}>
-              {projects[`${router.query.project}`].title}
+              {router.query.project &&
+                projects[`${router.query.project}`].title}
             </Text>
           )}
           {project.liveLink ? (

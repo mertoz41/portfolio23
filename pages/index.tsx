@@ -16,11 +16,8 @@ function App() {
       <Head>
         <title>Mert Ozkaynak</title>
         <meta name="description" content="Mert Ozkaynak portfolio website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Head>
-      <link rel="shortcut icon" href="/favicon.ico" />
-    </Head> */}
-
       <animated.div style={homeAnimation}>
         <Flex
           h="100vh"

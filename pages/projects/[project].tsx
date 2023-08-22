@@ -2,7 +2,6 @@ import React from "react";
 import { Text, Flex, Image, Box, Wrap, Link } from "@chakra-ui/react";
 import Head from "next/head";
 import { animated, useSpring } from "@react-spring/web";
-
 import { useRouter } from "next/router";
 import ProjectPic from "@/components/ProjectPic";
 
@@ -87,7 +86,6 @@ const Project = () => {
         flexDirection={{ base: "column", xl: "row" }}
         justifyContent={"space-between"}
         m="0 auto"
-        // backgroundColor={"red"}
         backdropFilter={"blur(8px)"}
         w={{ base: "90%", xl: "50%" }}
       >
@@ -101,11 +99,10 @@ const Project = () => {
             />
           ) : (
             <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"}>
-              {router.query.project &&
-                projects[`${router.query.project}`].title}
+              {project.title}
             </Text>
           )}
-          {project && project.liveLink ? (
+          {project.liveLink ? (
             <Link
               href={project.liveLink}
               alignSelf={"center"}
@@ -172,20 +169,20 @@ const Project = () => {
 
   return (
     <Box h="100vh" bg="#2e2e2e" overflowY={"auto"}>
+      <Head>
+        <title>{router.query.project}</title>
+      </Head>
       <animated.div style={homeAnimation}>
         <Box color="white">
-          <Head>
-            <title>{router.query.project}</title>
-          </Head>
-          {renderHeader()}
+          {project && renderHeader()}
           <Flex
             m="0 auto"
             w={{ base: "90%", xl: "50%" }}
             justifyContent={"space-between"}
             flexDir={"column"}
           >
-            {renderDescription()}
-            {renderPictures()}
+            {project && renderDescription()}
+            {project && renderPictures()}
           </Flex>
         </Box>
       </animated.div>

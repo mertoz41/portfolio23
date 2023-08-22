@@ -15,6 +15,7 @@ function App() {
     <Box bg="#2e2e2e" color="white">
       <Head>
         <title>Mert Ozkaynak</title>
+        <meta name="description" content="Mert Ozkaynak portfolio website" />
       </Head>
       {/* <Head>
       <link rel="shortcut icon" href="/favicon.ico" />

@@ -63,6 +63,7 @@ const Projects = () => {
               src={"ios-folder.jpeg"}
               h={{ base: "180px", xl: "170px" }}
               w={{ base: "180px", xl: "170px" }}
+              alt="folder"
             />
             <Text alignSelf={"center"} fontWeight={500} fontSize={22}>
               {project.title}

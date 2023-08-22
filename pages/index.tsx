@@ -16,6 +16,10 @@ function App() {
       <Head>
         <title>Mert Ozkaynak</title>
         <meta name="description" content="Mert Ozkaynak portfolio website" />
+        <meta
+          name="google-site-verification"
+          content="BdcSbbdl77EbnSO73TNDEkRqlOehHt5rPaegmW6vBKA"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <animated.div style={homeAnimation}>

@@ -57,7 +57,6 @@ const Projects = () => {
             borderRadius={30}
             cursor={"pointer"}
             padding={5}
-            //   onClick={() => selectProject(project)}
           >
             <Image
               src={"ios-folder.jpeg"}
@@ -78,8 +77,10 @@ const Projects = () => {
   };
 
   return (
-    <Box>
-      <Text fontSize={{ base: 35, xl: 50 }}>projects</Text>
+    <Box marginTop={50}>
+      <Text fontSize={{ base: 35, xl: 50 }} fontWeight={300}>
+        projects
+      </Text>
 
       <Wrap
         justify={{ base: "center", xl: "flex-start" }}

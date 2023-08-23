@@ -2,11 +2,13 @@
 
 http://www.mertozkaynak.com
 
-Portfolio website built in Next.js to showcase my skills and projects. To achieve this, I implemented the following - 
+Portfolio website built in Next.js to showcase my skills and projects.
 
+### Technologies Used
 
-## Next.js
-
-## Chakra UI
-
-## AWS s3 
+* HTML5
+* CSS3
+* TypeScript
+* Chakra UI
+* Next.js
+* AWS S3

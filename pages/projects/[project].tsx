@@ -43,7 +43,7 @@ const Project = () => {
       ],
       picType: "jpg",
     },
-    "miles-for-military": {
+    "mfm": {
       title: "miles-for-military",
       brief:
         "App that earns Military servicemembers flights back home for volunteer work",
@@ -98,7 +98,7 @@ const Project = () => {
               alt="cezs-icon"
             />
           ) : (
-            <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"}>
+            <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"} fontWeight={300}>
               {project.title}
             </Text>
           )}
@@ -125,16 +125,16 @@ const Project = () => {
   const renderDescription = () => {
     return (
       <Flex flexDir={"column"}>
-        <Text fontSize={22} fontWeight={500}>
+        <Text fontSize={22} fontWeight={300}>
           {project.description}
         </Text>
         {project.description2 && (
-          <Text fontSize={22} fontWeight={500} marginTop={5}>
+          <Text fontSize={22} fontWeight={300} marginTop={5}>
             {project.description2}
           </Text>
         )}
         {project.description3 && (
-          <Text fontSize={22} fontWeight={500} marginTop={5}>
+          <Text fontSize={22} fontWeight={300} marginTop={5}>
             {project.description3}
           </Text>
         )}

@@ -4,16 +4,16 @@ const About = () => {
   return (
     <>
       <Text mt={10} fontSize={20}>
-        I am a full-stack web developer based in Washington, DC.
+        Full stack web developer 
       </Text>
-      <Text fontSize={20}>
-        In the past I worked at ThinkNimble, and nowadays I am building a music
-        app for instrumentalists.
-      </Text>
-      <Text fontSize={20}>
-        Passionate about learning new technologies and building minimalist user
+      {/* <Text fontSize={20} fontWeight={300} marginTop={10}>
+        In the past worked at ThinkNimble, nowadays working on a music app for
+        instrumentalists.
+      </Text> */}
+      {/* <Text fontSize={20} fontWeight={300}>
+        Passionate about building minimalist user
         interfaces, focusing on the essential.
-      </Text>
+      </Text> */}
     </>
   );
 };

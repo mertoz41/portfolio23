@@ -3,9 +3,9 @@ import { Box, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { animated, useSpring } from "@react-spring/web";
 import Header from "@/components/Header";
-import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 function App() {
   const [homeAnimation, animate] = useSpring(() => ({
     from: { opacity: 0 },
@@ -30,9 +30,9 @@ function App() {
           overflowY={"auto"}
           justifyContent={"center"}
         >
-          <Flex flexDirection={"column"} w="50%">
+          <Flex flexDirection={"column"} w={{ base: "90%", xl: "50%" }}>
             <Header />
-            <About />
+            {/* <About /> */}
             <Projects />
             <Footer />
           </Flex>

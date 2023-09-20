@@ -24,7 +24,7 @@ const Projects = () => {
       embedId: "OmjkEZvZiHg",
     },
     {
-      title: "miles-for-military",
+      title: "mfm",
       brief:
         "App that earns Military servicemembers flights back home for volunteer work",
       description:
@@ -60,11 +60,16 @@ const Projects = () => {
           >
             <Image
               src={"ios-folder.jpeg"}
-              h={{ base: "180px", xl: "170px" }}
-              w={{ base: "180px", xl: "170px" }}
+              h={{ base: "100px", xl: "170px" }}
+              w={{ base: "100px", xl: "170px" }}
               alt="folder"
             />
-            <Text alignSelf={"center"} fontWeight={500} fontSize={22}>
+            <Text
+              alignSelf={"center"}
+              display={"inline-block"}
+              fontWeight={500}
+              fontSize={{ base: 18, xl: 22 }}
+            >
               {project.title}
             </Text>
           </WrapItem>
@@ -78,9 +83,9 @@ const Projects = () => {
 
   return (
     <Box marginTop={50}>
-      <Text fontSize={{ base: 35, xl: 50 }} fontWeight={300}>
+      {/* <Text fontSize={{ base: 35, xl: 50 }} fontWeight={300}>
         projects
-      </Text>
+      </Text> */}
 
       <Wrap
         justify={{ base: "center", xl: "flex-start" }}

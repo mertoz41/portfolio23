@@ -5,7 +5,7 @@ import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 const Footer = () => {
   const [hovering, setHovering] = useState(false);
   return (
-    <Flex justifyContent={"space-between"} paddingY={40}>
+    <Flex justifyContent={"space-between"} paddingY={20}>
       <Text
         fontSize={{ base: 35, xl: 50 }}
         fontWeight={300}
@@ -15,7 +15,7 @@ const Footer = () => {
         {hovering ? "mertozka41@gmail.com" : "contact"}
       </Text>
       <Flex
-        flexDirection={{ base: "column", xl: "row" }}
+        flexDirection={{ base: "row", xl: "row" }}
         justifyContent={"space-between"}
         alignSelf={"center"}
       >

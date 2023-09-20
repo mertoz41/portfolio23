@@ -15,7 +15,7 @@ const Header = () => {
       >
         <Flex>
           <Text fontSize={{ base: 55, xl: 50 }} fontWeight={300}>
-            Hi, I'm Mert
+            Hi, I{"'"}m Mert
           </Text>
           <Image
             src={"mert-pic.jpg"}

@@ -81,7 +81,7 @@ const Projects = () => {
   };
 
   return (
-    <Box marginTop={50}>
+    <Box marginTop={11}>
       <Wrap
         justify={{ base: "center", xl: "flex-start" }}
         spacing="30px"

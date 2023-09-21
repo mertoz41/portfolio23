@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex, Link } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 import {
   IoLogoGithub,
   IoLogoLinkedin,
@@ -9,14 +9,11 @@ import {
 
 const Footer = () => {
   return (
-    <Flex justifyContent={"space-between"} paddingY={20}>
-      <Text fontSize={{ base: 35, xl: 30 }} fontWeight={300}>
-        Contact
-      </Text>
+    <Flex justifyContent={"flex-end"} paddingY={20}>
       <Flex
         flexDirection={{ base: "row", xl: "row" }}
         justifyContent={"space-between"}
-        alignSelf={"center"}
+        alignSelf={"flex-end"}
       >
         <Link target="_blank" href="mailto:mertozka41@gmail.com">
           <IoIosMail size={40} color="#e5e5e5" />

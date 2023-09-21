@@ -5,7 +5,6 @@ import { animated, useSpring } from "@react-spring/web";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import About from "@/components/About";
 function App() {
   const [homeAnimation, animate] = useSpring(() => ({
     from: { opacity: 0 },
@@ -32,7 +31,6 @@ function App() {
         >
           <Flex flexDirection={"column"} w={{ base: "90%", xl: "50%" }}>
             <Header />
-            {/* <About /> */}
             <Projects />
             <Footer />
           </Flex>

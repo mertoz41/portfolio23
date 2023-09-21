@@ -33,7 +33,7 @@ const Header = () => {
             fontWeight={300}
             textAlign={{ base: "left", xl: "right" }}
           >
-            App Developer
+            Web Developer
           </Text>
           <Text
             fontSize={{ base: 23, xl: 20 }}

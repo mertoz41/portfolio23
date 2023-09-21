@@ -53,7 +53,6 @@ const Projects = () => {
         >
           <WrapItem
             flexDirection={"column"}
-            _hover={{ backgroundColor: "#363636" }}
             borderRadius={30}
             cursor={"pointer"}
             padding={5}
@@ -83,10 +82,6 @@ const Projects = () => {
 
   return (
     <Box marginTop={50}>
-      {/* <Text fontSize={{ base: 35, xl: 50 }} fontWeight={300}>
-        projects
-      </Text> */}
-
       <Wrap
         justify={{ base: "center", xl: "flex-start" }}
         spacing="30px"

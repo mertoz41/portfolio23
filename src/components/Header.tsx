@@ -13,7 +13,7 @@ const Header = () => {
         justifyContent={"space-between"}
         flexDirection={{ base: "column", xl: "row" }}
       >
-        <Flex>
+        <Flex justifyContent={{ base: "space-between", xl: "none" }}>
           <Text fontSize={{ base: 55, xl: 50 }} fontWeight={300}>
             Hi, I{"'"}m Mert
           </Text>
@@ -27,7 +27,7 @@ const Header = () => {
             marginX={2}
           />
         </Flex>
-        <Box alignSelf={{ base: "flex-start", xl: "flex-end" }}>
+        <Box alignSelf={{ xl: "flex-end" }}>
           <Text
             fontSize={{ base: 23, xl: 20 }}
             fontWeight={300}

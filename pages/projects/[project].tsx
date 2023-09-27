@@ -14,7 +14,6 @@ const Project = () => {
   const projects: any = {
     cezs: {
       title: "cezs",
-      brief: "Music platform for instrumentalists",
       description:
         "Musicians platform focused on instruments and music as performing arts, built as a side hustle when I observed that current musicians platforms are inconvenient for instrumentalists with sound files and by music made on laptops.",
       description2:
@@ -25,9 +24,18 @@ const Project = () => {
       pictures: ["fifth", "first", "fourth", "second", "sixth", "third"],
       picType: "png",
     },
+    artstone: {
+      title: "artstone",
+      description:
+        "Official website of a marble, granite, and quartz products supplier in the DMV area. Displays their stone catalog along with edges and sinks to go with, providing customers a one-stop shop to remodel their kitchens, bathrooms, and more.",
+      description2:
+        "For this website I used Next.js to make use of server side rendering for SEO purposes and it is hosted on Vercel's frontend cloud, which provides CDN out of the box. Images are stored in a private AWS S3 bucket and delivered through AWS CloudFront to speed up distribution, and utilized Chakra UI as the responsive component library.",
+      liveLink: "https://artstone-five.vercel.app/",
+      pictures: ["one", "two", "three", "four"],
+      picType: "png",
+    },
     squirrel: {
       title: "squirrel",
-      brief: "Banking app to teach financial literacy to scholars",
       description:
         "Banking app for an edtech startup based in Abu Dhabi with a goal to teach scholars financial literacy as early as possible. Simulates deposits sent by teachers, transferring money between checking, saving, and emergency accounts, randomized real life events, weekly payments such as transportation cost, desk rent, and school fee, and a marketplace to purchase items to customize students' avatar.",
       description2:
@@ -43,10 +51,8 @@ const Project = () => {
       ],
       picType: "jpg",
     },
-    "mfm": {
+    mfm: {
       title: "miles-for-military",
-      brief:
-        "App that earns Military servicemembers flights back home for volunteer work",
       description:
         " App that earns Military servicemembers flights back home for volunteer work. Assisted in frontend functionalty in a React/TypeScript codebase, wrote GraphQL queries and mutations in a Django/Python backend.",
       embedId: "tNyQDQ7cUEw",
@@ -62,7 +68,6 @@ const Project = () => {
     },
     "hooper-app": {
       title: "hooper-app",
-      brief: "Basketball app that shows courts around you",
       description:
         "Basketball app that displays basketball courts on the map and allows users to organize games through each locations forum. First project I got to build on my own in my coding journey as I wanted to work with maps. While brainstorming, I reminisced the days my friends and I wished a way to find others to hoop against in the city, then built it for the 10 year old me.",
       liveLink: "https://hooper-frontend.herokuapp.com/",
@@ -98,7 +103,11 @@ const Project = () => {
               alt="cezs-icon"
             />
           ) : (
-            <Text fontSize={{ base: 35, xl: 60 }} alignSelf={"flex-end"} fontWeight={300}>
+            <Text
+              fontSize={{ base: 35, xl: 60 }}
+              alignSelf={"flex-end"}
+              fontWeight={300}
+            >
               {project.title}
             </Text>
           )}

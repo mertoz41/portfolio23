@@ -17,6 +17,10 @@ const ProjectPic = ({
       width: { base: "280px", xl: "400px" },
       height: { base: "220px", xl: "340px" },
     },
+    artstone: {
+      width: { base: "280px", xl: "400px" },
+      height: { base: "220px", xl: "340px" },
+    },
     cezs: { width: "220px", height: "480px" },
     mfm: { width: "220px", height: "480px" },
   };
@@ -39,7 +43,7 @@ const ProjectPic = ({
         isLoaded={picLoaded}
       >
         <Image
-          src={`https://mert-portfolio-content.s3.amazonaws.com/${folder}/${picture}`}
+          src={`https://d1b90agdfvsto3.cloudfront.net/${folder}/${picture}`}
           h={
             picture.includes("Responsive")
               ? pictureSizeDictionary.cezs.height

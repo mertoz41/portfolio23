@@ -10,22 +10,22 @@ const ProjectPic = ({
   const [picLoaded, setPicLoaded] = useState(false);
   const pictureSizeDictionary: any = {
     hooper: {
-      width: { base: "280px", xl: "540px" },
+      width: { base: "280px", xl: "100%" },
       height: { base: "170px", xl: "280px" },
     },
     squirrel: {
-      width: { base: "280px", xl: "400px" },
+      width: { base: "280px", xl: "100%" },
       height: { base: "220px", xl: "340px" },
     },
     artstone: {
-      width: { base: "280px", xl: "400px" },
+      width: { base: "280px", xl: "100%" },
       height: { base: "220px", xl: "340px" },
     },
     cezs: { width: "220px", height: "480px" },
-    mfm: { width: "220px", height: "480px" },
+    mfm: { width: "100%", height: "480px" },
   };
   return (
-    <WrapItem backgroundColor="#292929" padding={4} borderRadius={30}>
+    <WrapItem backgroundColor="#292929" padding={folder === "mfm" ? 0 : 4} borderRadius={30}>
       <Skeleton
         h={
           picture.includes("Responsive")

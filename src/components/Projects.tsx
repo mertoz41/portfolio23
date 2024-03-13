@@ -1,8 +1,19 @@
 import React from "react";
-import { Wrap, Box, Text, Tooltip, WrapItem, Image } from "@chakra-ui/react";
+import {
+  Wrap,
+  Box,
+  Text,
+  Tooltip,
+  WrapItem,
+  Image,
+  Heading,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import Link from "next/link";
 const Projects = () => {
   const projects = [
+    { title: "parlay-builder", brief: "" },
     {
       title: "cezs",
       brief: "Music platform for instrumentalists",
@@ -26,22 +37,22 @@ const Projects = () => {
     },
   ];
 
-  const renderProject = (project: any, index: number) => {
-    return (
-      <Link key={index} href={`/projects/${project.title}`}>
+  const renderProjects = () => {
+    return projects.map((project: any, i: number) => (
+      <GridItem
+        colSpan={2}
+        rowSpan={2}
+        display={"flex"}
+        justifyContent={"center"}
+      >
         <Tooltip
           label={project.brief}
           fontSize={20}
           placement="top"
           borderRadius={10}
-          backgroundColor={"#363636"}
+          backgroundColor={"#262626"}
         >
-          <WrapItem
-            flexDirection={"column"}
-            borderRadius={30}
-            cursor={"pointer"}
-            padding={5}
-          >
+          <Link key={i} href={`/projects/${project.title}`}>
             <Image
               src={"ios-folder.jpeg"}
               h={{ base: "100px", xl: "170px" }}
@@ -50,30 +61,37 @@ const Projects = () => {
             />
             <Text
               alignSelf={"center"}
-              display={"inline-block"}
+              // display={"inline-block"}
               fontWeight={500}
+              textAlign={"center"}
               fontSize={{ base: 18, xl: 22 }}
             >
               {project.title}
             </Text>
-          </WrapItem>
+          </Link>
         </Tooltip>
-      </Link>
-    );
-  };
-  const renderProjectsSection = () => {
-    return projects.map((project: any, i: number) => renderProject(project, i));
+      </GridItem>
+    ));
   };
 
   return (
-    <Box marginTop={11}>
-      <Wrap
-        justify={{ base: "center", xl: "flex-start" }}
-        spacing="30px"
-        height={"auto"}
+    <Box>
+      <Heading
+        fontSize={{ base: 55, xl: 40 }}
+        textAlign={"center"}
+        fontWeight={300}
+        marginBottom={5}
       >
-        {renderProjectsSection()}
-      </Wrap>
+        projects
+      </Heading>
+      <Grid
+        h="auto"
+        templateRows="repeat(4, 1fr)"
+        templateColumns="repeat(6, 1fr)"
+        gap={4}
+      >
+        {renderProjects()}
+      </Grid>
     </Box>
   );
 };

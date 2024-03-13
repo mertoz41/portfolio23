@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <Flex justifyContent={"flex-end"} paddingY={20}>
+    <Flex justifyContent={"center"} paddingY={20}>
       <Flex
         flexDirection={{ base: "row", xl: "row" }}
         justifyContent={"space-between"}

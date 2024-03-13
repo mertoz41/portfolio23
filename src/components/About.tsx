@@ -2,14 +2,40 @@ import React from "react";
 import { Text, Flex } from "@chakra-ui/react";
 
 const About = () => {
+  const paragraphs = [
+    "I am a full stack software engineer with a background in international business studies and professional sports.",
+    "In the past I worked at ThinkNimble where I collaborated on several projects simultaneously, and nowadays I am working on Cezs and other projects while exploring machine learning.",
+    "",
+    "Outside of code I like to play chess with friends, discover house music to mix, and coach/play basketball.",
+  ];
+  const renderLine = (text: string) => {
+    return (
+      <Text lineHeight={2.2} marginY={2}>
+        <span
+          style={{
+            backgroundColor: "#262626",
+            whiteSpace: "pre-wrap",
+            paddingTop: 5,
+            paddingBottom: 5,
+          }}
+        >
+          <span>{text}</span>
+        </span>
+      </Text>
+    );
+  };
   return (
-    <Flex flexDirection="column" paddingY={5}>
-      <Text fontSize={{ base: 30, xl: 30 }} fontWeight={300}>
-        I build responsive, accessible, and performant apps.
-      </Text>
-      <Text fontSize={{ base: 30, xl: 30 }} fontWeight={300}>
-        Passionate about minimal design, focusing on the essential.
-      </Text>
+    <Flex
+      fontSize={{ base: 30, xl: 20 }}
+      fontWeight={300}
+      flexDirection="column"
+      paddingY={5}
+    >
+      {renderLine(paragraphs[0])}
+      {renderLine(paragraphs[1])}
+      {renderLine(paragraphs[2])}
+      {renderLine(paragraphs[3])}
+      {renderLine(paragraphs[4])}
     </Flex>
   );
 };

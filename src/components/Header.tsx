@@ -10,7 +10,7 @@ const Header = () => {
     >
       <Flex
         w="100%"
-        justifyContent={"space-between"}
+        justifyContent={"center"}
         flexDirection={{ base: "column", xl: "row" }}
       >
         <Flex justifyContent={{ base: "space-between", xl: "none" }}>
@@ -27,7 +27,7 @@ const Header = () => {
             marginX={2}
           />
         </Flex>
-        <Box alignSelf={{ xl: "flex-end" }}>
+        {/* <Box alignSelf={{ xl: "flex-end" }}>
           <Text
             fontSize={{ base: 23, xl: 20 }}
             fontWeight={300}
@@ -42,7 +42,7 @@ const Header = () => {
           >
             Washington, DC | İzmir
           </Text>
-        </Box>
+        </Box> */}
       </Flex>
     </Flex>
   );

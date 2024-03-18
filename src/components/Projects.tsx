@@ -47,6 +47,7 @@ const Projects = () => {
         rowSpan={2}
         display={"flex"}
         justifyContent={"center"}
+        key={i}
       >
         <Tooltip
           label={project.brief}

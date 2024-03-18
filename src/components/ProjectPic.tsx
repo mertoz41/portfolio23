@@ -23,9 +23,14 @@ const ProjectPic = ({
     },
     cezs: { width: "220px", height: "480px" },
     mfm: { width: "100%", height: "480px" },
+    parlaybuilder: { width: "220px", height: "480px" },
   };
   return (
-    <WrapItem backgroundColor="#292929" padding={folder === "mfm" ? 0 : 4} borderRadius={30}>
+    <WrapItem
+      backgroundColor="#292929"
+      padding={folder === "mfm" ? 0 : 4}
+      borderRadius={30}
+    >
       <Skeleton
         h={
           picture.includes("Responsive")

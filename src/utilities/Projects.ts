@@ -23,6 +23,7 @@ const projects: any = {
   },
   squirrel: {
     title: "squirrel",
+    liveLink: "https://squirreledu.co/",
     description:
       "Banking app for an edtech startup based in Abu Dhabi with a goal to teach scholars financial literacy as early as possible. Simulates deposits sent by teachers, transferring money between checking, saving, and emergency accounts, randomized real life events, weekly payments such as transportation cost, desk rent, and school fee, and a marketplace to purchase items to customize students' avatar.",
     description2:
@@ -40,6 +41,7 @@ const projects: any = {
   },
   mfm: {
     title: "miles-for-military",
+    liveLink: "https://www.milesformilitary.org/",
     description:
       " App that earns Military servicemembers flights back home for volunteer work. Assisted in frontend functionalty in a React/TypeScript codebase, wrote GraphQL queries and mutations in a Django/Python backend.",
     embedId: "tNyQDQ7cUEw",
@@ -67,6 +69,17 @@ const projects: any = {
       "newcourt",
       "newcourtResponsive",
     ],
+    picType: "png",
+  },
+  "parlay-builder": {
+    title: "parlaybuilder",
+    description:
+      "NBA parlay builder app that displays todays games, mvp ladder, rosters sorted by points, as well as players' season stats, last 5 games, and last 5 games against the next opponent to help users with their parlays.",
+    description2:
+      "Django app scrapes basketball-reference.com, statmuse.com, and foxsports.com using Beautiful Soup and returns necessary data in dataframes with Pandas. Chakra UI is utilized in the frontend for responsive design.",
+    liveLink: "https://master--silver-pika-ad269b.netlify.app/",
+    code: "https://github.com/mertoz41/parlay-builder-server",
+    pictures: ["pbhomephone", "tbplayerphone", "pbteamphone"],
     picType: "png",
   },
 };

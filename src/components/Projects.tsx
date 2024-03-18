@@ -13,14 +13,13 @@ import {
 import Link from "next/link";
 const Projects = () => {
   const projects = [
-    { title: "parlay-builder", brief: "" },
+    {
+      title: "parlay-builder",
+      brief: "Parlay Builder app to help users with their parlays",
+    },
     {
       title: "cezs",
       brief: "Music platform for instrumentalists",
-    },
-    {
-      title: "artstone",
-      brief: "Official website for marble, granite, and quartz manufacturer",
     },
     {
       title: "squirrel",
@@ -30,6 +29,10 @@ const Projects = () => {
       title: "mfm",
       brief:
         "App that earns Military servicemembers flights back home for volunteer work",
+    },
+    {
+      title: "artstone",
+      brief: "Official website for marble, granite, and quartz manufacturer",
     },
     {
       title: "hooper-app",

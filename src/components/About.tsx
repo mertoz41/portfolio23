@@ -4,9 +4,9 @@ import { Text, Flex } from "@chakra-ui/react";
 const About = () => {
   const paragraphs = [
     "I am a full stack web developer with a background in international business studies and professional sports.",
-    "In the past I worked at ThinkNimble where I collaborated on several projects simultaneously, nowadays I am working on Cezs and other projects while exploring machine learning.",
+    "In the past I worked at ThinkNimble where I worked on several projects simultaneously, nowadays I am working on Cezs and other projects while exploring data science.",
     "",
-    "Outside of code I like to play chess with friends, search house music, and coach/play basketball.",
+    "Outside of code I like to play chess with friends, search house music, and play basketball.",
   ];
   const renderLine = (text: string) => {
     return (

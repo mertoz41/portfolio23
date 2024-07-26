@@ -4,7 +4,7 @@ import { Text, Flex } from "@chakra-ui/react";
 const About = () => {
   const paragraphs = [
     "I am a full stack web developer with a background in international business studies and professional sports.",
-    "In the past I worked at ThinkNimble where I worked on several projects simultaneously, nowadays I am working on Cezs and other projects while exploring data science.",
+    "In the past I worked at ThinkNimble where I worked on several projects simultaneously, nowadays I am working on Cezs and other projects.",
     "",
     "Outside of code I like to play chess with friends, search house music, and play basketball.",
   ];

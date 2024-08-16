@@ -30,14 +30,6 @@ const Projects = () => {
       brief:
         "App that earns Military servicemembers flights back home for volunteer work",
     },
-    {
-      title: "artstone",
-      brief: "Official website for marble, granite, and quartz manufacturer",
-    },
-    {
-      title: "hooper-app",
-      brief: "Basketball app that shows courts around you",
-    },
   ];
 
   const renderProjects = () => {

@@ -71,7 +71,7 @@ const Projects = () => {
   };
 
   return (
-    <Box>
+    <Box marginTop={"10"}>
       <Heading
         fontSize={{ base: 55, xl: 40 }}
         textAlign={"center"}

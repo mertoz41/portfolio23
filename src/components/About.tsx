@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex } from "@chakra-ui/react";
+import { Text, Flex, Heading } from "@chakra-ui/react";
 
 const About = () => {
   const paragraphs = [
@@ -31,6 +31,14 @@ const About = () => {
       flexDirection="column"
       paddingY={5}
     >
+      <Heading
+        fontSize={{ base: 55, xl: 40 }}
+        textAlign={"center"}
+        fontWeight={300}
+        marginBottom={5}
+      >
+        about
+      </Heading>
       {renderLine(paragraphs[0])}
       {renderLine(paragraphs[1])}
       {renderLine(paragraphs[2])}

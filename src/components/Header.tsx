@@ -1,49 +1,35 @@
 import React from "react";
-import { Flex, Text, Image, Box } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
+import Image from "next/image";
 
-const Header = () => {
-  return (
-    <Flex
-      flexDirection={{ base: "column", xl: "row" }}
-      justifyContent={"space-between"}
-      marginTop={10}
-    >
-      <Flex
-        w="100%"
-        justifyContent={"center"}
-        flexDirection={{ base: "column", xl: "row" }}
+const Header = ({ handleScroll }: { handleScroll: any }) => {
+  const renderNavBar = () => {
+    const renderButton = (title: string) => (
+      <Box
+        onClick={() => handleScroll(title)}
+        marginLeft={"4"}
+        cursor={"pointer"}
+        _hover={{ backgroundColor: "transparent" }}
+        backgroundColor={"#262626"}
       >
-        <Flex justifyContent={{ base: "space-between", xl: "none" }}>
-          <Text fontSize={{ base: 55, xl: 50 }} fontWeight={300}>
-            Hi, I{"'"}m Mert
-          </Text>
-          <Image
-            src={"mert-pic.jpg"}
-            h={{ base: "70px", xl: "60px" }}
-            w={{ base: "70px", xl: "60px" }}
-            alt="mert picture"
-            alignSelf={"center"}
-            borderRadius={"50%"}
-            marginX={2}
-          />
-        </Flex>
-        {/* <Box alignSelf={{ xl: "flex-end" }}>
-          <Text
-            fontSize={{ base: 23, xl: 20 }}
-            fontWeight={300}
-            textAlign={{ base: "left", xl: "right" }}
-          >
-            Web Developer
-          </Text>
-          <Text
-            fontSize={{ base: 23, xl: 20 }}
-            fontWeight={300}
-            textAlign={{ base: "left", xl: "right" }}
-          >
-            Washington, DC | İzmir
-          </Text>
-        </Box> */}
+        <Text>{title}</Text>
+      </Box>
+    );
+    return (
+      <Flex fontSize={{ base: 30, xl: 20 }} alignSelf={"center"}>
+        {renderButton("stack")}
+
+        {renderButton("projects")}
+        {renderButton("about")}
+        {renderButton("contact")}
       </Flex>
+    );
+  };
+  return (
+    <Flex w="100%" justifyContent={"space-between"} marginTop={10}>
+      <Image src={`/mlogo.png`} alt={"logo"} width="64" height="64" />
+
+      {renderNavBar()}
     </Flex>
   );
 };

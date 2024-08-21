@@ -4,7 +4,7 @@ import Head from "next/head";
 import { animated, useSpring } from "@react-spring/web";
 import { useRouter } from "next/router";
 import ProjectPic from "@/components/ProjectPic";
-import projects from "@/utilities/Projects";
+import { projects } from "@/utilities/HardcodeData";
 const Project = () => {
   const router = useRouter();
   const [homeAnimation, animate] = useSpring(() => ({

@@ -6,7 +6,8 @@ const Welcome = () => {
     <Flex
       backgroundColor={"#262626"}
       flexDirection={{ base: "column", xl: "column" }}
-      marginTop={10}
+      marginTop={20}
+
     >
       <Flex
         height={500}

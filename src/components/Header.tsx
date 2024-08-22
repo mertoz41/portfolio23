@@ -7,7 +7,7 @@ const Header = ({ handleScroll }: { handleScroll: any }) => {
     const renderButton = (title: string) => (
       <Box
         onClick={() => handleScroll(title)}
-        marginLeft={"4"}
+        marginRight={"4"}
         cursor={"pointer"}
         _hover={{ backgroundColor: "transparent" }}
         backgroundColor={"#262626"}
@@ -26,9 +26,14 @@ const Header = ({ handleScroll }: { handleScroll: any }) => {
     );
   };
   return (
-    <Flex w="100%" justifyContent={"space-between"} marginTop={10}>
+    <Flex
+      position={"fixed"}
+      zIndex={1}
+      w="50%"
+      backdropFilter={"blur(10px)"}
+      justifyContent={"space-between"}
+    >
       <Image src={`/mlogo.png`} alt={"logo"} width="64" height="64" />
-
       {renderNavBar()}
     </Flex>
   );

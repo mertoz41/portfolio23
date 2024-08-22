@@ -1,70 +1,53 @@
 import React, { useState } from "react";
-import { WrapItem, Image, Skeleton } from "@chakra-ui/react";
-const ProjectPic = ({
-  picture,
-  folder,
-}: {
-  picture: string;
-  folder: string;
-}) => {
-  const [picLoaded, setPicLoaded] = useState(false);
+import { Box, Image, Flex } from "@chakra-ui/react";
+import SimpleImageSlider from "react-simple-image-slider";
+
+const ProjectPic = ({ picture, name }: { picture: any; name: string }) => {
   const pictureSizeDictionary: any = {
-    hooper: {
-      width: { base: "280px", xl: "100%" },
-      height: { base: "170px", xl: "280px" },
-    },
     squirrel: {
-      width: { base: "280px", xl: "100%" },
-      height: { base: "220px", xl: "340px" },
+      width: { base: "280px", xl: 560 },
+      height: { base: "220px", xl: 420 },
     },
-    artstone: {
-      width: { base: "280px", xl: "100%" },
-      height: { base: "220px", xl: "340px" },
+    cezs: { width: { base: 1450, xl: 250 }, height: { base: 380, xl: 540 } },
+    mfm: { width: { base: 1450, xl: 300 }, height: { base: 1450, xl: 500 } },
+    parlaybuilder: {
+      width: { base: 1450, xl: 220 },
+      height: { base: 1450, xl: 480 },
     },
-    cezs: { width: "220px", height: "480px" },
-    mfm: { width: "100%", height: "480px" },
-    parlaybuilder: { width: "220px", height: "480px" },
   };
   return (
-    <WrapItem
-      backgroundColor="#292929"
-      padding={folder === "mfm" ? 0 : 4}
-      borderRadius={30}
-    >
-      <Skeleton
-        h={
-          picture.includes("Responsive")
-            ? pictureSizeDictionary.cezs.height
-            : pictureSizeDictionary[folder].height
-        }
-        w={
-          picture.includes("Responsive")
-            ? pictureSizeDictionary.cezs.width
-            : pictureSizeDictionary[folder].width
-        }
-        startColor="#3e3e3e"
-        endColor="#292929"
-        borderRadius={10}
-        isLoaded={picLoaded}
+    <Flex>
+      <Box
+        position={"relative"}
+        h={{
+          base: pictureSizeDictionary[name].height.base,
+          xl: pictureSizeDictionary[name].height.xl,
+        }}
+        w={{
+          base: pictureSizeDictionary[name].width.base,
+          xl: pictureSizeDictionary[name].width.xl,
+        }}
+        display={"block"}
       >
-        <Image
-          src={`https://d1b90agdfvsto3.cloudfront.net/${folder}/${picture}`}
-          h={
-            picture.includes("Responsive")
-              ? pictureSizeDictionary.cezs.height
-              : pictureSizeDictionary[folder].height
-          }
-          w={
-            picture.includes("Responsive")
-              ? pictureSizeDictionary.cezs.width
-              : pictureSizeDictionary[folder].width
-          }
-          borderRadius={15}
-          onLoad={() => setPicLoaded(true)}
-          alt={`${picture}-alt`}
+        <SimpleImageSlider
+          width="100%"
+          height={"100%"}
+          // width={pictureSizeDictionary[name].width.xl}
+          // height={pictureSizeDictionary[name].height.xl}
+          images={picture}
+          showBullets={false}
+          showNavs={true}
+          bgColor="transparent"
         />
-      </Skeleton>
-    </WrapItem>
+      </Box>
+      {/* <Image
+        src={`https://d1b90agdfvsto3.cloudfront.net${picture}`}
+        h={{ xl: pictureSizeDictionary[name].height.xl }}
+        w={{ xl: pictureSizeDictionary[name].width.xl }}
+        borderRadius={15}
+        alt={`${picture}-alt`}
+      /> */}
+    </Flex>
   );
 };
 

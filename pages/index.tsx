@@ -4,11 +4,12 @@ import Head from "next/head";
 import { animated, useSpring } from "@react-spring/web";
 import Header from "@/components/Header";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import Welcome from "@/components/Welcome";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import ProjectsContainer from "@/components/ProjectsContainer";
+
 function App() {
   const projectRef = useRef<HTMLInputElement>(null);
   const ref = useRef<HTMLInputElement>(null);
@@ -54,7 +55,7 @@ function App() {
       </Head>
       <animated.div style={homeAnimation}>
         <Flex
-          h="100vh"
+          h="auto"
           color="white"
           overflowY={"auto"}
           justifyContent={"center"}
@@ -66,7 +67,7 @@ function App() {
               <Skills />
             </Box>
             <Box ref={projectRef}>
-              <Projects />
+              <ProjectsContainer />
             </Box>
             <Box ref={ref}>
               <About />

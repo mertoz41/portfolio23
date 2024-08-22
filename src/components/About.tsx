@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, Flex, Heading } from "@chakra-ui/react";
-
+import SectionTitle from "./SectionTitle";
 const About = () => {
   const paragraphs = [
     "I am a full stack web developer with a background in international business studies and professional sports.",
@@ -30,15 +30,9 @@ const About = () => {
       fontWeight={300}
       flexDirection="column"
       paddingY={5}
+      marginTop={55}
     >
-      <Heading
-        fontSize={{ base: 55, xl: 40 }}
-        textAlign={"center"}
-        fontWeight={300}
-        marginBottom={5}
-      >
-        about
-      </Heading>
+      <SectionTitle title={"about"} />
       {renderLine(paragraphs[0])}
       {renderLine(paragraphs[1])}
       {renderLine(paragraphs[2])}

@@ -1,8 +1,8 @@
 const projects: any = {
   cezs: {
-    title: "cezs",
+    title: "Cezs",
     description:
-      "Musicians platform focused on instruments and music as performing arts, built as a side hustle when I observed that current musicians platforms are inconvenient for instrumentalists with sound files and by music made on laptops.",
+      "Musicians platform focused on instruments and music as performing arts, built as a side hustle when I observed that current musicians platforms are inconvenient for instrumentalists with sound files and by music made on laptops. Provides a catalog which users contribute to as they build their portfolios and maps to explore musicians around to collaborate and pinpoint upcoming gigs.",
     description2:
       "Provides a catalog which users contribute to as they build their portfolios and maps to explore musicians around to collaborate and pinpoint upcoming gigs. ",
     description3:
@@ -10,19 +10,20 @@ const projects: any = {
     liveLink: "https://apps.apple.com/us/app/cezs/id6450903389",
     pictures: ["fifth", "first", "fourth", "second", "sixth", "third"],
     picType: "png",
+    picture: "/cezs/fifth.png",
   },
-  artstone: {
-    title: "artstone",
-    description:
-      "Official website of a marble, granite, and quartz products supplier in the DMV area. Displays their stone catalog along with edges and sinks to go with, providing customers a one-stop shop to remodel their kitchens, bathrooms, and more.",
-    description2:
-      "For this website I used Next.js to make use of server side rendering for SEO purposes and it is hosted on Vercel's frontend cloud. Images are stored in a private AWS S3 bucket and delivered through AWS CloudFront to speed up distribution, and utilized Chakra UI as the responsive component library.",
-    liveLink: "https://artstone-five.vercel.app/",
-    pictures: ["one", "two", "three", "four"],
-    picType: "png",
-  },
+  // artstone: {
+  //   title: "artstone",
+  //   description:
+  //     "Official website of a marble, granite, and quartz products supplier in the DMV area. Displays their stone catalog along with edges and sinks to go with, providing customers a one-stop shop to remodel their kitchens, bathrooms, and more.",
+  //   description2:
+  //     "For this website I used Next.js to make use of server side rendering for SEO purposes and it is hosted on Vercel's frontend cloud. Images are stored in a private AWS S3 bucket and delivered through AWS CloudFront to speed up distribution, and utilized Chakra UI as the responsive component library.",
+  //   liveLink: "https://artstone-five.vercel.app/",
+  //   pictures: ["one", "two", "three", "four"],
+  //   picType: "png",
+  // },
   squirrel: {
-    title: "squirrel",
+    title: "Squirrel",
     liveLink: "https://squirreledu.co/",
     description:
       "Banking app for an edtech startup based in Abu Dhabi with a goal to teach scholars financial literacy as early as possible. Simulates deposits sent by teachers, transferring money between checking, saving, and emergency accounts, randomized real life events, weekly payments such as transportation cost, desk rent, and school fee, and a marketplace to purchase items to customize students' avatar.",
@@ -38,9 +39,10 @@ const projects: any = {
       "transfer",
     ],
     picType: "jpg",
+    picture: "/squirrel/banking.jpg",
   },
   mfm: {
-    title: "miles-for-military",
+    title: "Miles for Military",
     liveLink: "https://www.milesformilitary.org/",
     description:
       " App that earns Military servicemembers flights back home for volunteer work. Assisted in frontend functionalty in a React/TypeScript codebase, wrote GraphQL queries and mutations in a Django/Python backend.",
@@ -54,25 +56,26 @@ const projects: any = {
       "register",
     ],
     picType: "png",
+    picture: "/mfm/dashboard.png",
   },
-  "hooper-app": {
-    title: "hooper-app",
-    description:
-      "Basketball app that displays basketball courts on the map and allows users to organize games through each locations forum. First project I got to build on my own in my coding journey as I wanted to work with maps. While brainstorming, I reminisced the days my friends and I wished a way to find others to hoop against in the city, then built it for the 10 year old me.",
-    liveLink: "https://hooper-frontend.herokuapp.com/",
-    code: "https://github.com/mertoz41/hooper-front-end",
-    pictures: [
-      "explore",
-      "exploreResponsive",
-      "location",
-      "locationResponsive",
-      "newcourt",
-      "newcourtResponsive",
-    ],
-    picType: "png",
-  },
-  "parlay-builder": {
-    title: "parlaybuilder",
+  // "hooper-app": {
+  //   title: "hooper-app",
+  //   description:
+  //     "Basketball app that displays basketball courts on the map and allows users to organize games through each locations forum. First project I got to build on my own in my coding journey as I wanted to work with maps. While brainstorming, I reminisced the days my friends and I wished a way to find others to hoop against in the city, then built it for the 10 year old me.",
+  //   liveLink: "https://hooper-frontend.herokuapp.com/",
+  //   code: "https://github.com/mertoz41/hooper-front-end",
+  //   pictures: [
+  //     "explore",
+  //     "exploreResponsive",
+  //     "location",
+  //     "locationResponsive",
+  //     "newcourt",
+  //     "newcourtResponsive",
+  //   ],
+  //   picType: "png",
+  // },
+  parlaybuilder: {
+    title: "NBA Stats Scraper",
     description:
       "NBA parlay builder app that displays todays games, mvp ladder, rosters sorted by points, as well as players' season stats, last 5 games, and last 5 games against the next opponent to help users with their parlays.",
     description2:
@@ -81,6 +84,7 @@ const projects: any = {
     code: "https://github.com/mertoz41/parlay-builder-server",
     pictures: ["pbhomephone", "tbplayerphone", "pbteamphone"],
     picType: "png",
+    picture: "/parlaybuilder/pbhomephone.png",
   },
 };
 
@@ -88,16 +92,9 @@ const frontendData: any[] = [
   "html",
   "css",
   "javascript",
-//   "TypeScript",
+  "typescript",
   "React",
-//   "React Native",
   "redux",
-//   "Expo",
 ];
-const backendData :any[] = [
-    // "python",
-    // "django", 
-    "ruby", 
-    "rails",
-]
+const backendData: any[] = ["python", "django", "ruby", "rails"];
 export { projects, backendData, frontendData };

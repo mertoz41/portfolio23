@@ -7,10 +7,10 @@ const Project = ({ content }: { content: any }) => {
     const renderButton = (title: string, link: string) => (
       <Link href={link} isExternal>
         <Text
-          backgroundColor={"#262626"}
+          backgroundColor={"#2e2e2e"}
           marginRight={5}
           cursor={"pointer"}
-          _hover={{ backgroundColor: "#2e2e2e" }}
+          _hover={{ backgroundColor: "#262626" }}
         >
           {title}
         </Text>
@@ -33,11 +33,17 @@ const Project = ({ content }: { content: any }) => {
     >
       <ProjectPic picture={content.pictures} name={content.name} />
 
-      <Flex padding={5} justifyContent={"center"} flexDirection={"column"}>
+      <Flex
+        fontSize={20}
+        padding={5}
+        justifyContent={"center"}
+        flexDirection={"column"}
+      >
         <Heading marginBottom={10} alignSelf={"center"} fontSize={24}>
           {content.title}
         </Heading>
-        <Text> {content.description}</Text>
+        <Text>{content.description}</Text>
+        <Text marginTop={5}>Tech stack: {content.techStack}</Text>
         {renderButtonSection()}
       </Flex>
     </Flex>

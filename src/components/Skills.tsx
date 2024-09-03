@@ -5,11 +5,15 @@ import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 const Skills = () => {
   const renderSkillSection = (title: string, stack: any) => (
-    <Flex justifyContent={"space-between"} marginBottom={10}>
-      <Heading alignSelf={"center"} fontSize={25} fontWeight={300}>
+    <Flex
+      flexDirection={{ base: "column", xl: "row" }}
+      justifyContent={"space-between"}
+      marginBottom={10}
+    >
+      <Heading alignSelf={"center"} fontSize={25} marginBottom={{base: 5, xl: 0}} fontWeight={300}>
         {title}
       </Heading>
-      <Flex>
+      <Flex  justifyContent={{base: "space-around"}}>
         {stack.map((lang: string, i: number) => (
           <Flex marginRight={5}>
             <Image
@@ -25,10 +29,7 @@ const Skills = () => {
     </Flex>
   );
   return (
-    <Flex
-      flexDirection={{ base: "column", xl: "column" }}
-      marginTop={55}
-    >
+    <Flex flexDirection={{ base: "column", xl: "column" }} marginTop={55}>
       <SectionTitle title={"tech stack"} />
 
       <Flex justify={"space-between"} flexDir={"column"}>

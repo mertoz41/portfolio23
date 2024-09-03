@@ -37,8 +37,10 @@ const VerticalProject = ({ content }: { content: any }) => {
         <ProjectPic picture={content.pictures} name={content.name} />
       </Flex>
 
-      <Flex padding={5} justifyContent={"center"} flexDirection={"column"}>
+      <Flex fontSize={20} padding={5} justifyContent={"center"} flexDirection={"column"}>
         <Text> {content.description}</Text>
+        <Text marginTop={5}>Tech stack: {content.techStack}</Text>
+
         {renderButtonSection()}
       </Flex>
     </Flex>

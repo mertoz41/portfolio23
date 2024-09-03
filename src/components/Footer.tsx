@@ -18,12 +18,7 @@ const Footer = () => {
         <Link target="_blank" href="mailto:mertozka41@gmail.com">
           <IoIosMail size={40} color="#e5e5e5" />
         </Link>
-        <Link target="_blank" href="https://github.com/mertoz41">
-          <IoLogoGithub size={40} color="#e5e5e5" />
-        </Link>
-        <Link target="_blank" href="https://www.linkedin.com/in/mert-ozkaynak/">
-          <IoLogoLinkedin size={40} color="#e5e5e5" />
-        </Link>
+   
         <Link target="_blank" href="https://www.instagram.com/mertozkaynak14/">
           <IoLogoInstagram size={40} color="#e5e5e5" />
         </Link>

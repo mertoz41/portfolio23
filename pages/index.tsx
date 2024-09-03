@@ -75,7 +75,7 @@ function App() {
             <Box ref={contactRef}>
               <Contact />
             </Box>
-            <Footer />
+            {/* <Footer /> */}
           </Flex>
         </Flex>
       </animated.div>

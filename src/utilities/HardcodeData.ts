@@ -4,7 +4,9 @@ const projects: any = {
     title: "Cezs",
     name: "cezs",
     description:
-      "Musicians platform focused on instruments and music as performing arts, built as a side hustle when I observed that current musicians platforms are inconvenient for instrumentalists with sound files and by music made on laptops. Provides a catalog which users contribute to as they build their portfolios and maps to explore musicians around to collaborate and pinpoint upcoming gigs. Provides a catalog which users contribute to as they build their portfolios and maps to explore musicians around to collaborate and pinpoint upcoming gigs. Used Ruby on Rails to build a RESTful API in the backend, utilized ActionCable for real time features, AWS S3 through ActiveStorage to store user videos, and Json Web Tokens for authentication while I built the frontend with Expo managed React Native and utilized Redux to manage app state.",
+      "Social network designed for instrumentalists that combines maps with a music library to help users network through geolocation and music taste. While users build their portfolios and contribute to the library, maps display nearby events posted by users as well as musicians to collaborate.",
+    techStack:
+      "Ruby on Rails, WebSockets, PostgreSQL, React Native, Redux, AWS (S3, CloudFront), JSON Web Tokens",
     liveLink: "https://apps.apple.com/us/app/cezs/id6450903389",
     picture: "/cezs/fifth.png",
     pictures: [
@@ -22,7 +24,9 @@ const projects: any = {
     name: "squirrel",
     liveLink: "https://squirreledu.co/",
     description:
-      "Banking app for an edtech startup based in Abu Dhabi with a goal to teach scholars financial literacy as early as possible. Simulates deposits sent by teachers, transferring money between checking, saving, and emergency accounts, randomized real life events, weekly payments such as transportation cost, desk rent, and school fee, and a marketplace to purchase items to customize students' avatar. I led the frontend development of the project using TypeScript/React and wrote component testing for business logic. Learned working with GraphQL APIs and wrote queries and mutations In a Django/Python codebase.",
+      "Banking app designed to teach scholars financial literacy, built for an EdTech startup in Abu Dhabi. Allows teachers to deposit money into students accounts, transfer between accounts, simulates weekly payments and randomized real-life events, and a marketplace to customize students' avatar.",
+    techStack:
+      "Django, Graphql, Django Hordak, React, TypeScript, React Testing Library",
     pictures: [
       `${cloudurl}/squirrel/banking.jpg`,
       `${cloudurl}/squirrel/checkout.jpg`,
@@ -40,7 +44,8 @@ const projects: any = {
     name: "mfm",
     liveLink: "https://www.milesformilitary.org/",
     description:
-      " App that earns Military servicemembers flights back home for volunteer work. Assisted in frontend functionalty in a React/TypeScript codebase, wrote GraphQL queries and mutations in a Django/Python backend.",
+      "App for active duty military members to redeem their volunteer hours in exchange for a flight home.",
+    techStack: "Django, React, TypeScript",
     pictures: [
       `${cloudurl}/mfm/addflight.png`,
       `${cloudurl}/mfm/addHours.png`,
@@ -57,7 +62,8 @@ const projects: any = {
     title: "NBA Stats Scraper",
     name: "parlaybuilder",
     description:
-      "NBA parlay builder app that displays todays games, mvp ladder, rosters sorted by points, as well as players' season stats, last 5 games, and last 5 games against the next opponent to help users with their parlays. Django app scrapes basketball-reference.com, statmuse.com, and foxsports.com using Beautiful Soup and returns necessary data in dataframes with Pandas. Chakra UI is utilized in the frontend for responsive design.",
+      "A web scraping project that scrapes and displays statistics from multiple websites, tailored for NBA sports bettors.",
+    techStack: "Django, Beautiful Soup, Pandas, React, Chakra UI",
     liveLink: "https://master--silver-pika-ad269b.netlify.app/",
     code: "https://github.com/mertoz41/parlay-builder-server",
     pictures: [

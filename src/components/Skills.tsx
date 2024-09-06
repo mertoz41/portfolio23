@@ -10,14 +10,18 @@ const Skills = () => {
       justifyContent={"space-between"}
       marginBottom={10}
     >
-      <Heading alignSelf={"center"} fontSize={25} marginBottom={{base: 5, xl: 0}} fontWeight={300}>
+      <Heading
+        alignSelf={"center"}
+        fontSize={25}
+        marginBottom={{ base: 5, xl: 0 }}
+        fontWeight={300}
+      >
         {title}
       </Heading>
-      <Flex  justifyContent={{base: "space-around"}}>
+      <Flex justifyContent={{ base: "space-around" }}>
         {stack.map((lang: string, i: number) => (
-          <Flex marginRight={5}>
+          <Flex key={i} marginRight={5}>
             <Image
-              key={i}
               src={`/langs/${lang}.png`}
               alt={lang}
               width="44"

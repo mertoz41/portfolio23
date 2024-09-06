@@ -26,12 +26,10 @@ const Contact = () => {
             paddingBottom: 5,
           }}
         >
-          <span>
-            Thanks for visiting my portfolio. If you're interested in
+            Thanks for visiting my portfolio. If you&apos;re interested in
             collaborating, have any questions, or would like to discuss
-            potential opportunities, feel free to get in touch. I'm always open
+            potential opportunities, feel free to get in touch. I&apos;m always open
             to new connections and exciting projects.
-          </span>
         </span>
       </Text>
       <Flex marginTop={5} marginBottom={10} alignSelf={"center"}>

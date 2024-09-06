@@ -17,7 +17,7 @@ const projects: any = {
       `${cloudurl}/cezs/sixth.png`,
       `${cloudurl}/cezs/third.png`,
     ],
-    code: "https://github.com/mertoz41/parlay-builder-server",
+    code: "https://github.com/mertoz41/cezs-client",
   },
   squirrel: {
     title: "Squirrel",

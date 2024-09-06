@@ -30,6 +30,7 @@ const ProjectPic = ({ picture, name }: { picture: any; name: string }) => {
         display={"block"}
       >
         <SimpleImageSlider
+        autoPlay
           width="100%"
           height={"100%"}
           images={picture}

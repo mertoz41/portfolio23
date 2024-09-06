@@ -10,16 +10,12 @@ const Welcome = () => {
       marginTop={20}
     >
       <Flex
-        height={{base: 750 ,xl: 500}}
+        height={{ base: 750, xl: 500 }}
         alignSelf={"center"}
         flexDir={"column"}
         justifyContent={"center"}
       >
-        <Flex
-  
-          justifyContent={"center"}
-          flexDirection={"row"}
-        >
+        <Flex justifyContent={"center"} flexDirection={"row"}>
           <Flex justifyContent={{ base: "space-between", xl: "none" }}>
             <Text
               fontSize={{ base: 55, xl: 50 }}
@@ -39,19 +35,12 @@ const Welcome = () => {
             />
           </Flex>
         </Flex>
-        <Flex justifyContent={"center"} flexDirection={"row"} fontSize={{base: 17, xl: 20}}>
+        <Flex
+          justifyContent={"center"}
+          flexDirection={"row"}
+          fontSize={{ base: 17, xl: 20 }}
+        >
           <Text>Full-stack web developer based in Washington DC.</Text>
-        </Flex>
-        <Flex alignSelf={"center"} marginTop={10}>
-          <Link target="_blank" href="https://github.com/mertoz41">
-            <IoLogoGithub size={40} color="#e5e5e5" />
-          </Link>
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/mert-ozkaynak/"
-          >
-            <IoLogoLinkedin size={40} color="#e5e5e5" />
-          </Link>
         </Flex>
       </Flex>
     </Flex>

@@ -4,7 +4,6 @@ import Head from "next/head";
 import { animated, useSpring } from "@react-spring/web";
 import Header from "@/components/Header";
 import About from "@/components/About";
-import Footer from "@/components/Footer";
 import Welcome from "@/components/Welcome";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";

@@ -8,7 +8,7 @@ import Welcome from "@/components/Welcome";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import ProjectsContainer from "@/components/ProjectsContainer";
-
+import FadeInSection from "@/components/FadeInSection";
 function App() {
   const projectRef = useRef<HTMLInputElement>(null);
   const ref = useRef<HTMLInputElement>(null);
@@ -62,15 +62,23 @@ function App() {
           <Flex flexDirection={"column"} w={{ base: "90%", xl: "50%" }}>
             <Header handleScroll={handleScroll} />
             <Welcome />
-            <Box ref={stackRef}>
-              <Skills />
-            </Box>
-            <Box ref={projectRef}>
-              <ProjectsContainer />
-            </Box>
+            <FadeInSection>
+              <Box ref={stackRef}>
+                <Skills />
+              </Box>
+            </FadeInSection>
+            <FadeInSection>
+              <Box ref={projectRef}>
+                <ProjectsContainer />
+              </Box>
+            </FadeInSection>
+            <FadeInSection>
+
             <Box ref={ref}>
               <About />
             </Box>
+            </FadeInSection>
+
             <Box ref={contactRef}>
               <Contact />
             </Box>

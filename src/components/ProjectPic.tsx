@@ -35,7 +35,7 @@ const ProjectPic = ({ picture, name }: { picture: any; name: string }) => {
           height={"100%"}
           images={picture}
           showBullets={false}
-          showNavs={true}
+          showNavs={false}
           bgColor="transparent"
         />
       </Box>

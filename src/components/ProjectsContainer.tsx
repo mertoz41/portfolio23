@@ -1,17 +1,25 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Fade, Flex } from "@chakra-ui/react";
 import SectionTitle from "./SectionTitle";
 import Project from "./Project";
 import VerticalProject from "./VerticalProject";
 import { projects } from "@/utilities/HardcodeData";
-
+import FadeInSection from "./FadeInSection";
 const ProjectsContainer = () => {
   return (
     <Flex flexDirection={{ base: "column", xl: "column" }} marginTop={55}>
-      <SectionTitle title={"projects"} />
-      <Project content={projects.parlaybuilder} />
-      <Project content={projects.cezs} />
-      <VerticalProject content={projects.squirrel} />
+      <FadeInSection>
+        <SectionTitle title={"projects"} />
+      </FadeInSection>
+      <FadeInSection>
+        <Project content={projects.parlaybuilder} />
+      </FadeInSection>
+      <FadeInSection>
+        <Project content={projects.cezs} />
+      </FadeInSection>
+      <FadeInSection>
+        <VerticalProject content={projects.squirrel} />
+      </FadeInSection>
       <Project content={projects.mfm} />
     </Flex>
   );
